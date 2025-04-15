@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddAuditionPage</title>
+    <link rel="stylesheet" href="styles/registration.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+</head>
+
+<body>
+
+    <div class="container">
+       
+            <div class="back-btn " onclick="window.location.href='auditions.html'" style="margin-left: 280px;cursor: pointer;">
+            Back
+            </div>
+            <h2 class="text-center mb-4">Register Your Audition Here</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-7" style="padding: 20px;">
+                <div class="form-container">
+                    <form>
+                        <div class="mb-3">
+                            <label for="auditionTitle" class="form-label">Audition Title</label>
+                            <input type="text" class="form-control" id="auditionTitle"
+                                placeholder="Enter audition title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Requirements" class="form-label">Requirements</label>
+                            <input type="text" class="form-control" id="Requirements"
+                                placeholder="Enter Requirements" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Date of Audition" class="form-label">Date of Audition</label>
+                            <input type="text" class="form-control" id="Date of Audition"
+                                placeholder="Enter Date of Audition" required>
+                        </div>
+                        <div>
+                            <label for="Poster" class="form-label">Upload Poster</label> <br>
+                            <input type="file" class="form-control-file custom-file-input"" id="Poster">
+                        </div>
+                        <div class="mb-3">
+                            <label for="additionalinfo" class="form-label">Additional Information</label>
+                            <textarea class="form-control" id="additionalinfo" rows="3" placeholder="Enter addition information like about audition ,timings"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="Location"
+                                placeholder="Location city">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"
+                                        style="background-color:#303030 ;border: 0.1px #757575 solid; color: white;">+91</span>
+                                    <input type="text" class="form-control" id="phoneNumber"
+                                        placeholder="Enter phone number" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Enter address"></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                            <button type="button" class="btn btn-secondary"  onclick="window.location.href='auditions.html'">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="text-center p-2 bg-dark" style="color: white ;">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="">nrityasahachara.com</a>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

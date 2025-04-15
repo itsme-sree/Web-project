@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="logoimg" class="img-fluid"
+                    style="max-height: 50px; max-width: 30%;margin-top: 4px;margin-left: 30px;margin-right: 400px;"">
+            </a>
+            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="institutions.html">Institutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="auditions.html">Auditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html" style="color: orange;">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">ContactUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Join</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Events</h1>
+        <p>"Ignite your senses with the allure of dance and music at our vibrant events."</p>
+        <div class="col">
+            <button type="button" class="butt float-end mb-3" style="margin-right: 222px;" data-toggle="modal" data-target="#addEventModal">Add Event</button>
+        </div>
+    </div>
+    <section>
+    <div class="container">
+        <!-- Event Card 1 -->
+        <div class="event-card">
+            <img src="images/event1.jpg" alt="Event Poster">
+            <div class="event-details">
+                <h4>Event Title 1</h4>
+                <p><strong>Date:</strong> May 15, 2024</p>
+                <p><strong>Time:</strong> 7:00 PM - 9:00 PM</p>
+                <p><strong>Venue:</strong> Venue Name</p>
+                <p><strong>Info:</strong> example@example.com</p>
+            </div>
+        </div>
+    
+        <!-- Event Card 2 -->
+        <div class="event-card">
+            <img src="images/slide3.jpg" alt="Event Poster">
+            <div class="event-details">
+                <h4>Event Title 2</h4>
+                <p><strong>Date:</strong> June 10, 2024</p>
+                <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                <p><strong>Venue:</strong> Venue Name</p>
+                <p><strong>Info:</strong> example@example.com</p>
+            </div>
+        </div>
+        <div class="event-card">
+            <img src="" alt="Event Poster">
+            <div class="event-details">
+                <h4>Event Title 2</h4>
+                <p><strong>Date:</strong> June 10, 2024</p>
+                <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                <p><strong>Venue:</strong> Venue Name</p>
+                <p><strong>Info:</strong> example@example.com</p>
+            </div>
+        </div>
+        
+        <div class="event-card">
+            <img src="event2.jpg" alt="Event Poster">
+            <div class="event-details">
+                <h4>Event Title 2</h4>
+                <p><strong>Date:</strong> June 10, 2024</p>
+                <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                <p><strong>Venue:</strong> Venue Name</p>
+                <p><strong>Info:</strong> example@example.com</p>
+            </div>
+        </div>
+        <!-- Add more event cards as needed -->
+    </div>
+</section>
+<div class="modal fade" id="addEventModal" tabindex="-1" role="dialog"
+aria-labelledby="addEventModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="addEventModalLabel">Add Your Event</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="eventTitle">Event Title</label>
+                    <input type="text" class="form-control" id="eventTitle"
+                        placeholder="Enter Event Title">
+                </div>
+                <div class="form-group">
+                    <label for="eventDate">Event Date </label>
+                    <input type="text" class="form-control" id="eventDate"
+                        placeholder="Enter Event Date (month date,year)">
+                </div>
+                <div class="form-group">
+                    <label for="eventTime">Event Timings</label>
+                    <input type="text" class="form-control" id="eventTime" placeholder="Enter Event Timings">
+                </div>
+                <div class="form-group">
+                    <label for="venue">Venue </label>
+                    <textarea class="form-control" id="venue" rows="2" placeholder="Enter venue "></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="eventposter">Add Poster</label>
+                    <input type="file" class="form-control-file" id="eventposter">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+        </div>
+        <div id="successMessage" style="display: none; color: green; margin-top: 10px;">Event is added
+            successfully!</div>
+    </div>
+</div>
+</div>
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted" id="contactus">
+        <!-- Section: Social media -->
+        <section class="foot d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+            style="margin-bottom : 1px ;">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div style="padding-right: 150px;">
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="foot" style="margin: 1px 0px;">
+            <div class="container text-center text-md-start pt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>NrityaSahachara
+                        </h4>
+                        <p>
+                            Our Platform is an attempt to permanently preserve the rich art and cultural heritage of
+                            India. Our dream is to provide 24/7 online access to personalized lectures, tutorials,
+                            classes, and performances of all Indian art and culture.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 hov">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            contents
+                        </h6>
+                        <p>
+                            <a href="home.html" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="classes.html" class="text-reset">classes</a>
+                        </p>
+                        <p>
+                            <a href="auditions.html" class="text-reset">Auditions</a>
+                        </p>
+                        <p>
+                            <a href="events.html" class="text-reset">events</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 hov">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <br>
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy & policies</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">feedback</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 cwhite-3 col-xl-3 mx-auto mb-md-0 mb-4 hov">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Andhra Pradesh, India</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            nrityasahachara.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +91 1234567890</p>
+                        <p><i class="fas fa-print me-3"></i> +91 1234567890</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-2 bg-dark" style="color: white ;">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="">nrityasahachara.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('#submitBtn').click(function () {
+                // You can add your logic to handle form submission here
+                console.log('Form submitted');
+
+                // For example, you can collect the form data
+                var eventTitle = $('#eventTitle').val();
+                var eventDate = $('#eventDate').val();
+                var venue = $('#venue').val();
+
+                // Display success message and close modal
+                $('#successMessage').fadeIn();
+                setTimeout(function () {
+                    $('#successMessage').fadeOut();
+                    $('#addInstitutionModal').modal('hide');
+                }, 2000); // Adjust the delay as needed
+
+                // Additional actions like AJAX call to submit data to server can be added here
+            });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
